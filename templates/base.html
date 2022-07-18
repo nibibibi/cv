@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{{ the_title }}</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='bootstrap.min.css') }} ">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='styles.css') }} ">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background: var(--bs-green);">
+        <div class="container-fluid"><a class="navbar-brand" href="#">nibitell</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">ABOUT WEBSITE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT ME</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">LINKS</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">LinkedIn</a><a class="dropdown-item" href="#">GitHub</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    {% block body %}
+
+    {% endblock %}
+
+</body>
+
+</html>
