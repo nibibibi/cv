@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  buildntest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Example task
+        run: | 
+          echo Let's say there is some testing.
+          gcloud --version
