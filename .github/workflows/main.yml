@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Example task
         run: | 
-          echo Let's say there is some testing.
+          echo "Let's say there is some testing."
           gcloud --version
