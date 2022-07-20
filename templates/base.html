@@ -25,10 +25,11 @@
     </nav>
     <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
 
-    {% block body %}
+    <div class="container" class="w-100 p-3">
+      {% block body %}
 
-    {% endblock %}
-
+      {% endblock %}
+    </div>
 </body>
 
 </html>
