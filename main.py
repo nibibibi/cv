@@ -13,7 +13,7 @@ def ab_website():
 
 @app.route('/cv')
 def vitae():
-    return "There will be my cv"
+    return "There will be my cv."
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
